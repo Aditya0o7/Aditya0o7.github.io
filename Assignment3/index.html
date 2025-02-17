@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sbm > *{
+            margin: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="" class="sbm" style="padding: 10px;">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        <label for="Gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="others" name="gender" value="others">
+        <label for="others">Others</label> <br>
+        <label for="Hobbies">Hobbies:</label> <br>
+        <input type="checkbox" id="Hobbies" value="Reading">
+        <label for="Reading">Reading</label> <br>
+        <input type="checkbox" id="Hobbies" value="Traveling">
+        <label for="Traveling">Traveling</label> <br>
+        <input type="checkbox" id="Hobbies" value="Cooking">
+        <label for="Cooking">Cooking</label> <br>
+        <input type="checkbox" id="Hobbies" value="Sports">
+        <label for="Sports">Sports</label> <br>
+        <br>
+        <label for="City">City</label>
+
+        <select name="City" id="City">
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Pune">Pune</option>
+          </select>
+          <br>
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required>
+          <br>
+          <label for="phone">Phone Number</label>
+          <input type="number" id="phone" name="phone" placeholder="10-digit-number" pattern="[0-9]{5}+[0-9]{5}" title="Please enter a 10 digit number" required>
+
+          <br>
+          <label for="address">Address</label>
+          <textarea id="address" name="address" placeholder="Enter your Address" required></textarea>
+
+        <br>
+        <button><a href="submitted.html" style="text-decoration: none; color: black ;">submit</a></button>
+    </form>
+</body>
+</html>
